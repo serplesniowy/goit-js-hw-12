@@ -4,6 +4,7 @@ button {
   background-color: rgba(78, 117, 255, 1);
   color: rgba(255, 255, 255, 1);
   gap: 10px;
+  border: 2px solid rgba(78, 117, 225, 1);
   border-radius: 8px;
   border-color: rgba(78, 117, 225, 1);
 }
@@ -33,12 +34,6 @@ button:hover {
   border: 2px solid red;
 }
 
-.loading {
-  display: flex;
-  justify-content: center;
-  margin-top: 36px;
-}
-
 #gallery {
   display: flex;
   flex-wrap: wrap;
@@ -58,8 +53,6 @@ button:hover {
 }
 
 .loading {
-  display: none;
-  justify-content: center;
   align-items: center;
   font-family: Montserrat;
   font-size: 16px;
@@ -67,6 +60,9 @@ button:hover {
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: left;
+  display: none;
+  justify-content: center;
+  margin-top: 36px;
 }
 
 .gallery-item {
@@ -77,6 +73,7 @@ button:hover {
   border-radius: 4px;
   border: 1px solid black;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .gallery-image {
@@ -109,4 +106,25 @@ button:hover {
 
 a {
   text-decoration: none;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.load-more-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.load-more-button:hover {
+  background-color: #0056b3;
 }
